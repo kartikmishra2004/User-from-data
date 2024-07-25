@@ -6,7 +6,7 @@ import cors from 'cors'
 const app = express();
 dbConnection();
 app.use(cors());
-app.use(express.json())
+app.use(express.json());
 const port = 3000;
 
 app.post("/submit", async (req, res) => {
